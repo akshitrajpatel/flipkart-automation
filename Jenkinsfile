@@ -13,6 +13,19 @@ pipeline {
                 bat 'java -version'
             }
         }
+	stage('Verify MAVEN_HOME') {
+            steps {
+                bat 'echo %MAVEN_HOME%\bin'  // Print the Java home directory
+                bat 'mvn -v'     // Print the Java version being used
+            }
+	}
+	// Stage to check Maven dependency tree
+        stage('Check Dependencies') {
+            steps {
+                echo 'Checking Maven dependencies...'
+                bat 'mvn dependency:tree'  // This will print the Maven dependency tree
+            }
+        }
         // Clone repository stage
         stage('Checkout') {
             steps {
