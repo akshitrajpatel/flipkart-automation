@@ -49,7 +49,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 // Execute the tests using Maven
-                 bat 'mvn test'
+                 bat 'mvn clean test -X'
             }
 
             // Post action for collecting results
