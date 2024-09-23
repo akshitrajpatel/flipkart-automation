@@ -13,6 +13,13 @@ pipeline {
                 bat 'java -version'
             }
         }
+	stage('Verify Maven and Java') {
+		steps {
+			bat 'mvn -version'  // Print Maven version
+			bat 'java -version' // Print Java version
+		}
+	}
+
 	// Stage to check Maven dependency tree
         stage('Check Dependencies') {
             steps {
