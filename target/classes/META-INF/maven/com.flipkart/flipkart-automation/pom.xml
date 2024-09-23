@@ -20,8 +20,21 @@
         <dependency>
         	<groupId>org.testng</groupId>
     		<artifactId>testng</artifactId>
-    		<version>7.9.0</version>
+    		<version>7.4.0</version>
     		<scope>test</scope>
 		</dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Use a compatible version -->
+                <configuration>
+                    <source>21</source> <!-- Change to your desired Java version -->
+                    <target>21</target> <!-- Change to your desired Java version -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

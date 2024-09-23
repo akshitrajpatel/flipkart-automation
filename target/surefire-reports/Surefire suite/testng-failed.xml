@@ -5,9 +5,9 @@
     <classes>
       <class name="com.flipkart.FlipkartAutomationTest">
         <methods>
-          <include name="searchProduct"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
           <include name="proceedToCheckout"/>
-          <include name="addProductToCart"/>
         </methods>
       </class> <!-- com.flipkart.FlipkartAutomationTest -->
     </classes>

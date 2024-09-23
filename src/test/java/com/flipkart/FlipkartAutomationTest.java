@@ -82,6 +82,7 @@ public class FlipkartAutomationTest extends FlipkartAutomation {
         }
         //loginField.sendKeys("8318162329");
         System.out.println("Mobile entered...");
-        driver.findElement(By.cssSelector("button[type='submit']")).click();
+        
+        driver.findElement(By.cssSelector("button.QqFHMw.twnTnD._7Pd1Fp")).click();
     }
 }
