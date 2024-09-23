@@ -3,6 +3,11 @@
     <groupId>com.flipkart</groupId>
     <artifactId>flipkart-automation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <properties>
+        <!-- Specify the Java version -->
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
