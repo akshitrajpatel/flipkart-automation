@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo 'Building the project...'
                 // Build the project using Maven
-                bat 'mvn clean install'
+                bat 'mvn clean install -U'
             }
         }
 
