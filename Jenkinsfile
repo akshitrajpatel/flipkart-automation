@@ -24,7 +24,7 @@ pipeline {
         stage('Check Dependencies') {
             steps {
                 echo 'Checking Maven dependencies...'
-                bat 'mvn dependency:tree'  // This will print the Maven dependency tre
+                bat 'mvn dependency:tree -Dverbose'  // This will print the Maven dependency tre
             }
         }
         // Clone repository stage
