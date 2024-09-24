@@ -27,6 +27,11 @@ pipeline {
                 bat 'mvn dependency:tree -Dverbose'  // This will print the Maven dependency tre
             }
         }
+	stage('Clean Workspace') {
+            steps {
+                deleteDir() // This will wipe out the workspace
+            }
+        }
         // Clone repository stage
         stage('Checkout') {
             steps {
